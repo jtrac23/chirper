@@ -1,0 +1,37 @@
+$def with (posts)
+
+<div id="container">
+    <div class="row">
+        <div id="sidebar-wrapper">
+            <ul class="sidenav">
+                <li class="active"><a href="/"><i class="material-icons">home</i> Home Feed</a></li>
+                <li><a href="#"><i class="material-icons">message</i></a> Messages</li>
+                <li><a href="#"><i class="material-icons">group</i></a> Friends</li>
+                <li><a href="#"><i class="material-icons">domain</i></a> Communities</li>
+                <li><a href="#"><i class="material-icons">notifications</i></a> Notifications</li>
+                <hr class="separator">
+                <li><a href="#"><i class="material-icons">settings</i></a> Settings</li>
+                <li><a href="#"><i class="material-icons">help</i></a> Help</li>
+            </ul>
+        </div> <!--End Sidebar-->
+        <div class="col-md-12">
+            <div class="">
+                <div class="background-image" style="background:url();">
+                    <div class="avatar">
+                        <img src="" />
+                        <h2>$session['user']['name']</h2>
+                        <span>Short blip goes here</span>
+                    </div>
+                </div>
+                <div class="profile-nav">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="/profile/$session['user']['name']">Activity</a></li>
+                        <li><a href="/profile/$session['user']['name']/info">Info</a></li>
+                        <li><a href="/profile/$session['user']['name']/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div><!--End Container Row -->
+</div>
